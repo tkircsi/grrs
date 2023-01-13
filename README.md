@@ -32,11 +32,31 @@ $ RUST_LOG=info ./target/debug/grrs --pattern let --path ./src/main.rs
 ## Run test
 ```bash
 cargo test
-    Finished test [unoptimized + debuginfo] target(s) in 0.06s
-     Running unittests src/main.rs (target/debug/deps/grrs-fb81b795c67fca43)
+    Finished test [unoptimized + debuginfo] target(s) in 0.13s
+     Running unittests src/lib.rs (target/debug/deps/grrs-67eaed8457456c34)
 
 running 1 test
 test find_a_match ... ok
 
 test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/deps/grrs-0524f1e4eb69b9ed)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/cli.rs (target/debug/deps/cli-809d554ff872977f)
+
+running 2 tests
+test file_doesnt_exist ... ok
+test find_content_in_file ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.37s
+
+   Doc-tests grrs
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
 ```
